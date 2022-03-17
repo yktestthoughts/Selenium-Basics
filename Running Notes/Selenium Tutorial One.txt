@@ -1,0 +1,130 @@
+-------------------------------------------------------- Selenium Day 1 -------------------------------------------------------------------
+
+Selenium
+Locators
+Synchronization => Waits (implicit wait, explicit wait)
+Common web driver actions => Select, Action, Alert handling, window handling, frames
+
+Selenium
+	
+	>> 4th generation
+	>> Used to automate web applications
+	>> In somecases we use third party tools deal with interfaces b/w two systems (File upload from a desktop)
+	>> Support a variety of lang:	
+		Java
+		python
+		C#
+		Ruby
+		Perl
+		JS
+		
+Automation
+
+	>> Repetitive scenarios
+	>> Saves time
+	>> light's out execution
+	>> Cost effective
+	
+Disadvanatages
+
+	>> Training might be required
+	>> Initial cost is high
+	>> Version control of work products may be ignored
+	>> Vendor response may be poor such as bug fixing, upgrade
+	
+Steps to automate an applications
+	
+	>> Open the applications
+	>> Go to the desired page
+	>> Perform the actions
+	>> Verify the results
+	
+
+Selenium RC
+	
+	>> Remote Control
+	>> Has three components
+		>> RC server
+		>> Client
+		>> Application
+	>> User => RC server => Application
+	>> Time consuming
+	>> Need to have the baiscs of networking
+	
+Selenium Web driver
+	
+	>> No concept of intermediator
+	>> Scripts will be directly injected to application through client
+	
+
+Web Elements
+	
+	>> Elements in a web application which has interation with user
+	>> Eg: Text box, Btns, Checkbox, Radiobtns...........
+	
+Locators
+
+	>> Used to locate web elements
+	>> Primary Locators
+		1. id => Most preferably used
+		2. name 
+		3. css 
+		4. xpath => XML path, used to locate dynamic elements
+			10 AM => Sin
+			11 AM => AI
+			
+	>> Secondary Locators
+	
+		1. tagname => a, div, img...........
+		2. class
+		3. link text
+		4. Partial link text
+		
+Selenium Installation
+	
+	>> java project
+		>> Seleniumhq = https://www.selenium.dev/
+		>> Download jars for selenium => Java lib
+		
+	>> Web driver installation
+		>> https://www.selenium.dev/downloads/
+		
+		
+Steps:
+
+	1. Set up the driverpath
+	
+		System.setProperty(key,driverexepath)
+			Chromedriver = WebDriver.chrome.driver
+			Geckodriver = WebDriver.gecko.Driver
+			
+	2. Initillize driver object
+		
+		WebDriver driver = new ChromeDriver();
+		
+	3. Naviagate to web page
+		
+		driver.get(URL); // Open the browser and naviage ti the URL
+		
+	4. Locate elements
+	
+		driver.findElement("locator") => Single element
+		driver.findElements("locator") => List of elements
+		sendKey() => To send values
+		getText() => to fetch text
+		
+		Check Options:
+			isDisplayed => Img
+			isEnabled => Buttons
+			isSelected => checkbox
+			
+			
+		getTitle => Retrieves the title of the page
+		
+		close vs quit
+		
+			close => close only the currently opened page
+			quit => closes the entire pages
+			
+			
+		
